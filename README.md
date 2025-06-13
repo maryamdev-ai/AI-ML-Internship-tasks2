@@ -1,10 +1,10 @@
 # AI-ML-Internship-tasks
 # Task 1: Iris Dataset Exploration
 
-## 📌 Objective
+## Objective
 Perform exploratory data analysis (EDA) on the Iris dataset to understand feature distributions, relationships between variables, and identify outliers.
 
-## 📂 Dataset Used
+## Dataset Used
 **Iris Dataset** (included in Seaborn)
 - 150 samples of iris flowers (50 per species)
 - Features:
@@ -15,7 +15,7 @@ Perform exploratory data analysis (EDA) on the Iris dataset to understand featur
 - Target:
   - `species` (setosa, versicolor, virginica)
 
-## 🔍 Methods Applied
+## Methods Applied
 1. **Data Exploration**
    - Statistical summaries (`.describe()`)
    - Missing value checks
@@ -27,7 +27,7 @@ Perform exploratory data analysis (EDA) on the Iris dataset to understand featur
    - Python (Pandas, Seaborn, Matplotlib)
    - Jupyter Notebook
 
-## 🔑 Key Findings
+## Key Findings
 1. **Species Separation**:
    - Setosa is easily distinguishable by petal measurements
    - Virginica has the largest flowers on average
@@ -40,7 +40,7 @@ Perform exploratory data analysis (EDA) on the Iris dataset to understand featur
    - Few outliers in sepal_width for setosa
    - Virginica shows the widest range in petal sizes
 
-## 📊 Sample Visualization
+## Sample Visualization
 ![pairplot](https://github.com/user-attachments/assets/eee79a2a-915f-4119-9a72-a0dbe9b705db)
 )
 

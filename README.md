@@ -44,7 +44,7 @@ Perform exploratory data analysis (EDA) on the Iris dataset to understand featur
 ![pairplot](https://github.com/user-attachments/assets/eee79a2a-915f-4119-9a72-a0dbe9b705db)
 )
 
-## 🛠 How to Run
+## How to Run
 1. Install requirements:
    ```bash
    pip install pandas seaborn matplotlib jupyter

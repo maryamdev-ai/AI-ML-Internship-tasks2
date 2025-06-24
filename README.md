@@ -106,52 +106,61 @@ This version is:
 4. Highlights safety features
 5. Includes clear usage instructions
 
-## House Price Prediction using Machine Learning
+# 🏠 House Price Prediction using Machine Learning
 
-##  Task Objective
+## 📋 Task Objective
 Build a regression model to predict house prices based on features like area, bedrooms, location, and condition. Compare multiple models and visualize the results.
 
-##  Dataset
+## 📂 Dataset
 - **Filename:** `train.csv`
 - **Target Variable:** `Price`
 - **Features Used:**
-  - Area
-  - Bedrooms
-  - Bathrooms
-  - Floors
-  - YearBuilt
-  - Location
-  - Condition
+  - Area  
+  - Bedrooms  
+  - Bathrooms  
+  - Floors  
+  - YearBuilt  
+  - Location  
+  - Condition  
   - Garage
 
-##  Models Applied
-- Linear Regression
+## 🧠 Models Applied
+- Linear Regression  
 - Gradient Boosting Regressor
 
-##  Workflow Summary
-1. **Load Dataset** – Using pandas
-2. **Preprocess Data** – Impute missing values, scale numerical features, encode categorical features
-3. **Model Training** – Linear Regression and Gradient Boosting
-4. **Evaluation Metrics** – MAE, RMSE
-5. **Visualization** – Prediction comparison and feature importance
-6. **Model Saving** – Save the best model using `joblib`
+## ⚙️ Workflow Summary
+1. Load Dataset using pandas  
+2. Preprocess Data  
+   - Impute missing values  
+   - Scale numerical features  
+   - Encode categorical features  
+3. Train Models  
+4. Evaluate using MAE and RMSE  
+5. Visualize predictions and feature importance  
+6. Save the best model using joblib
 
-##  Results
+## 📈 Results
 
-| Model              | MAE (USD)   | RMSE (USD)  |
-|-------------------|-------------|-------------|
-| Linear Regression | XXXX.XX     | XXXX.XX     |
-| Gradient Boosting | XXXX.XX   | XXXX.XX   |
+| Model              | MAE (USD) | RMSE (USD) |
+|-------------------|-----------|------------|
+| Linear Regression | XXXX.XX   | XXXX.XX    |
+| Gradient Boosting | XXXX.XX ✅ | XXXX.XX ✅  |
 
-(*Replace XXXX with actual values after running the script*)
+> Replace XXXX.XX with actual output values after running the script.
 
-## Outputs
-- `prediction_comparison.png` – Actual vs Predicted Price (both models)
-- `feature_importance.png` – Feature importance from Gradient Boosting
-- `house_price_predictor.pkl` – Saved trained model
+## 📊 Outputs
+- `prediction_comparison.png` – Actual vs Predicted prices for both models  
+- `feature_importance.png` – Top feature contributions  
+- `house_price_predictor.pkl` – Saved Gradient Boosting model
 
-##  Run Instructions
-1. Place `train.csv` in the same folder as the script
-2. Run the script:
-```bash
-python prediction.py
+## ▶️ Run Instructions
+1. Make sure `train.csv` is in the same directory as the script.  
+2. Run the following command in your terminal:
+
+    ```bash
+    python prediction.py
+    ```
+
+## 👩‍💻 Author
+- **Name:** Maryam Abdullah  
+- **Date:** June 24, 2025

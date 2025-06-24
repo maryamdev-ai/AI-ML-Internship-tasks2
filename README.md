@@ -106,3 +106,52 @@ This version is:
 4. Highlights safety features
 5. Includes clear usage instructions
 
+## House Price Prediction using Machine Learning
+
+##  Task Objective
+Build a regression model to predict house prices based on features like area, bedrooms, location, and condition. Compare multiple models and visualize the results.
+
+##  Dataset
+- **Filename:** `train.csv`
+- **Target Variable:** `Price`
+- **Features Used:**
+  - Area
+  - Bedrooms
+  - Bathrooms
+  - Floors
+  - YearBuilt
+  - Location
+  - Condition
+  - Garage
+
+##  Models Applied
+- Linear Regression
+- Gradient Boosting Regressor
+
+##  Workflow Summary
+1. **Load Dataset** – Using pandas
+2. **Preprocess Data** – Impute missing values, scale numerical features, encode categorical features
+3. **Model Training** – Linear Regression and Gradient Boosting
+4. **Evaluation Metrics** – MAE, RMSE
+5. **Visualization** – Prediction comparison and feature importance
+6. **Model Saving** – Save the best model using `joblib`
+
+##  Results
+
+| Model              | MAE (USD)   | RMSE (USD)  |
+|-------------------|-------------|-------------|
+| Linear Regression | XXXX.XX     | XXXX.XX     |
+| Gradient Boosting | XXXX.XX   | XXXX.XX   |
+
+(*Replace XXXX with actual values after running the script*)
+
+## Outputs
+- `prediction_comparison.png` – Actual vs Predicted Price (both models)
+- `feature_importance.png` – Feature importance from Gradient Boosting
+- `house_price_predictor.pkl` – Saved trained model
+
+##  Run Instructions
+1. Place `train.csv` in the same folder as the script
+2. Run the script:
+```bash
+python prediction.py

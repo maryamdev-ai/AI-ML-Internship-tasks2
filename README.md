@@ -112,8 +112,8 @@ This version is:
 Build a regression model to predict house prices based on features like area, bedrooms, location, and condition. Compare multiple models and visualize the results.
 
 ## 📂 Dataset
-- **Filename:** `train.csv`
-- **Target Variable:** `Price`
+- **Filename:** `train.csv`  
+- **Target Variable:** `Price`  
 - **Features Used:**
   - Area  
   - Bedrooms  
@@ -129,15 +129,12 @@ Build a regression model to predict house prices based on features like area, be
 - Gradient Boosting Regressor
 
 ## ⚙️ Workflow Summary
-1. Load Dataset using pandas  
-2. Preprocess Data  
-   - Impute missing values  
-   - Scale numerical features  
-   - Encode categorical features  
-3. Train Models  
-4. Evaluate using MAE and RMSE  
-5. Visualize predictions and feature importance  
-6. Save the best model using joblib
+1. Load dataset using pandas  
+2. Preprocess data: handle missing values, scale, and encode  
+3. Train models  
+4. Evaluate performance (MAE, RMSE)  
+5. Visualize predictions and feature importances  
+6. Save best-performing model using joblib
 
 ## 📈 Results
 
@@ -146,21 +143,19 @@ Build a regression model to predict house prices based on features like area, be
 | Linear Regression | XXXX.XX   | XXXX.XX    |
 | Gradient Boosting | XXXX.XX ✅ | XXXX.XX ✅  |
 
-> Replace XXXX.XX with actual output values after running the script.
+_Replace XXXX.XX with actual output after running the script._
 
-## 📊 Outputs
-- `prediction_comparison.png` – Actual vs Predicted prices for both models  
-- `feature_importance.png` – Top feature contributions  
-- `house_price_predictor.pkl` – Saved Gradient Boosting model
+## 📊 Output Files
+-  ![prediction_comparison](https://github.com/user-attachments/assets/9bcb9461-29a0-4f30-a4a3-f7b7347e9cfa) 
+- `![feature_importance](https://github.com/user-attachments/assets/67be50d3-5b5c-4896-929d-9ec1d37330bf)
+g` – Visual of top features  
 
-## ▶️ Run Instructions
-1. Make sure `train.csv` is in the same directory as the script.  
-2. Run the following command in your terminal:
 
-    ```bash
-    python prediction.py
-    ```
+## ▶️ How to Run
+1. Ensure `train.csv` is in the same directory as `prediction.py`  
+2. Run the following command in terminal:
 
-## 👩‍💻 Author
-- **Name:** Maryam Abdullah  
-- **Date:** June 24, 2025
+   ```bash
+
+  
+

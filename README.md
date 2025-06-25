@@ -106,6 +106,7 @@ This version is:
 4. Highlights safety features
 5. Includes clear usage instructions
 
+```
 **House Price Prediction using Machine Learning**
 
 **Task Objective**
@@ -145,14 +146,14 @@ Build a regression model to predict house prices based on features like area, be
 
 _Replace XXXX.XX with actual output after running the script._
 
-##Output Files
+## Output Files
 -  ![prediction_comparison](https://github.com/user-attachments/assets/9bcb9461-29a0-4f30-a4a3-f7b7347e9cfa) 
 - `![feature_importance](https://github.com/user-attachments/assets/67be50d3-5b5c-4896-929d-9ec1d37330bf)
 g` – Visual of top features  
 
 
 ##  How to Run
-1. Ensure `train.csv` is in the same directory as `prediction.py`  
+1. Ensure `` is in the same directory as `prediction.py`  
 2. Run the following command in terminal:
 
    ```bash

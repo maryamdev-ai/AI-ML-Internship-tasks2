@@ -160,12 +160,13 @@ g` – Visual of top features
 **python prediction.py**
 
 ```
-
+```
  # **Customer Churn Prediction ML Pipeline**  
 **A production-ready machine learning system to predict telecom customer churn**  
 
 ---
-
+---
+```
 ## **📌 Table of Contents**  
 1. [Project Overview](#-project-overview)  
 2. [Dataset](#-dataset)  
@@ -178,7 +179,7 @@ g` – Visual of top features
 9. [Contributing](#-contributing)  
 
 ---
-
+```
 ## **🔍 Project Overview**  
 This project builds an **automated ML pipeline** to predict customer churn (cancellation of service) for telecom companies. Key features:  
 ✔ **End-to-end pipeline** (preprocessing + modeling)  
@@ -189,6 +190,7 @@ This project builds an **automated ML pipeline** to predict customer churn (canc
 **Business Impact**: Helps reduce customer attrition by identifying at-risk users early.  
 
 ---
+```
 
 ## **📂 Dataset**  
 **Source**: [IBM Telco Customer Churn Dataset](https://github.com/IBM/telco-customer-churn-on-icp4d)  
@@ -203,6 +205,8 @@ This project builds an **automated ML pipeline** to predict customer churn (canc
 - Scaled numerical features (`StandardScaler`).
 
 ---
+
+```
 
 ## **⚙️ Technical Approach**  
 ### **1. Models Compared**  
@@ -227,17 +231,6 @@ Pipeline([
 - **Best Model**: Random Forest (`n_estimators=200`, `max_depth=20`).  
 
 ---
-
-## **🛠️ Installation**  
-1. Clone the repository:  
-   ```bash
-   git clone https://github.com/yourusername/customer-churn-prediction.git
-   cd customer-churn-prediction
-   ```  
-2. Install dependencies:  
-   ```bash
-   pip install -r requirements.txt  # pandas, scikit-learn, joblib
-   ```  
 
 ---
 

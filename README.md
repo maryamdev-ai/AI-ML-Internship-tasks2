@@ -158,7 +158,148 @@ g` – Visual of top features
 
    ```bash
 **python prediction.py**
+
 ```
+
+ # **Customer Churn Prediction ML Pipeline**  
+**A production-ready machine learning system to predict telecom customer churn**  
+
+---
+
+## **📌 Table of Contents**  
+1. [Project Overview](#-project-overview)  
+2. [Dataset](#-dataset)  
+3. [Technical Approach](#-technical-approach)  
+4. [Installation](#-installation)  
+5. [Usage](#-usage)  
+6. [Results](#-results)  
+7. [Deployment](#-deployment)  
+8. [Future Improvements](#-future-improvements)  
+9. [Contributing](#-contributing)  
+
+---
+
+## **🔍 Project Overview**  
+This project builds an **automated ML pipeline** to predict customer churn (cancellation of service) for telecom companies. Key features:  
+✔ **End-to-end pipeline** (preprocessing + modeling)  
+✔ **Hyperparameter tuning** with `GridSearchCV`  
+✔ **Production-ready** (exported as a `.joblib` file)  
+✔ **Explainable predictions** (probability scores)  
+
+**Business Impact**: Helps reduce customer attrition by identifying at-risk users early.  
+
+---
+
+## **📂 Dataset**  
+**Source**: [IBM Telco Customer Churn Dataset](https://github.com/IBM/telco-customer-churn-on-icp4d)  
+**Features**:  
+- **Numerical**: `tenure`, `MonthlyCharges`, `TotalCharges`  
+- **Categorical**: `gender`, `Contract`, `InternetService`, etc.  
+- **Target**: `Churn` (Yes/No → 1/0)  
+
+**Preprocessing**:  
+- Handled missing values in `TotalCharges`.  
+- Encoded categorical variables (`OneHotEncoder`).  
+- Scaled numerical features (`StandardScaler`).
+
+---
+
+## **⚙️ Technical Approach**  
+### **1. Models Compared**  
+| Model               | Accuracy (CV) | Key Hyperparameters Tuned          |
+|---------------------|--------------|-----------------------------------|
+| Logistic Regression | ~79%         | `C`, `penalty`, `solver`          |
+| **Random Forest**   | **~80%**     | `n_estimators`, `max_depth`       |
+
+### **2. Pipeline Architecture**  
+```python
+Pipeline([
+    ("preprocessor", ColumnTransformer([
+        ("num", StandardScaler(), numeric_features),
+        ("cat", OneHotEncoder(), categorical_features)
+    ])),
+    ("classifier", RandomForestClassifier())
+])
+```
+
+### **3. Optimization**  
+- **GridSearchCV**: 5-fold cross-validation.  
+- **Best Model**: Random Forest (`n_estimators=200`, `max_depth=20`).  
+
+---
+
+## **🛠️ Installation**  
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/yourusername/customer-churn-prediction.git
+   cd customer-churn-prediction
+   ```  
+2. Install dependencies:  
+   ```bash
+   pip install -r requirements.txt  # pandas, scikit-learn, joblib
+   ```  
+
+---
+
+## **🚀 Usage**  
+### **1. Training the Pipeline**  
+Run the Jupyter notebook or Python script:  
+```bash
+python churn_prediction.py
+```  
+
+### **2. Making Predictions**  
+Load the saved pipeline and predict on new data:  
+```python
+from joblib import load
+pipeline = load("churn_pipeline.joblib")
+prediction = pipeline.predict(new_customer_data)
+```  
+
+**Example Input**:  
+```python
+new_customer_data = pd.DataFrame({
+    "tenure": [12],
+    "MonthlyCharges": [70.50],
+    "TotalCharges": [850.00],
+    "gender": ["Female"],
+    # ... (all other features)
+})
+```  
+
+**Output**:  
+```
+Churn prediction: Yes (Probability: 72%)
+```  
+
+---
+
+## **📊 Results**  
+| Metric          | Logistic Regression | Random Forest |
+|----------------|--------------------|--------------|
+| **Accuracy**   | 79.2%              | **80.1%**    |
+| **Precision**  | 0.67               | 0.69         |
+| **Recall**     | 0.52               | 0.55         |  
+
+**Key Insights**:  
+- Customers with **higher monthly charges** are more likely to churn.  
+- **Longer tenure** reduces churn risk.  
+
+---
+
+## **🔮 Future Improvements**  
+- Add **SHAP values** for explainability.  
+- Incorporate **real-time data** (e.g., customer service logs).  
+- Deploy on **AWS SageMaker** for scalability.  
+
+---
+
+---  
+**Built with**: Python, Scikit-learn, Pandas  
+**Author**: Maryam Abdullah  
+
+---  
+✨ **Predict churn → Retain customers → Boost revenue!** ✨
 
   
 
